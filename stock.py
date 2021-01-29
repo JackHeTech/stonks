@@ -51,10 +51,11 @@ while time_elapsed <= end_time:
 
     if market_price >= target_price: 
         # price hits target!
-        os.system("afplay /Users/jackhe/Developer/gme/money.mp3")
+        # afplay only works on mac. So if you're using windows, find your equaivalent command and add it here. 
+        os.system("afplay /your/directory/gme/money.mp3")
     elif market_price <= lower_bound: 
         # shit. 
-        os.system("afplay /Users/jackhe/Developer/gme/guh.mp3")
+        os.system("afplay /your/directory/gme/guh.mp3")
 
     time_elapsed += interval_time 
     time.sleep(interval_time)
